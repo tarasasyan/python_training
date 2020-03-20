@@ -1,0 +1,84 @@
+{
+  "id": "6c8b9c12-5d4c-4f44-a364-efe3a37db54b",
+  "version": "2.0",
+  "name": "test_1",
+  "url": "https://www.srware.net",
+  "tests": [{
+    "id": "e969bfbb-c9ff-4783-84e3-b90e89a183d0",
+    "name": "test_11",
+    "commands": [{
+      "id": "5c645c5b-ef90-40e3-b588-13874ae75bd8",
+      "comment": "",
+      "command": "open",
+      "target": "/forum/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "efd90c63-053e-4e3c-827b-422ef8654e2e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b48ed9af-6c44-45f1-b1fd-9ae48bf9c053",
+      "comment": "",
+      "command": "click",
+      "target": "id=keywords",
+      "targets": [
+        ["id=keywords", "id"],
+        ["name=keywords", "name"],
+        ["css=#keywords", "css:finder"],
+        ["xpath=//input[@id='keywords']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aef8aacc-8b2b-4350-922b-fb7b70e23249",
+      "comment": "",
+      "command": "type",
+      "target": "id=keywords",
+      "targets": [
+        ["id=keywords", "id"],
+        ["name=keywords", "name"],
+        ["css=#keywords", "css:finder"],
+        ["xpath=//input[@id='keywords']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "60eb8974-4ad0-4dc0-bf1a-b44b9cf78cca",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=keywords",
+      "targets": [
+        ["id=keywords", "id"],
+        ["name=keywords", "name"],
+        ["css=#keywords", "css:finder"],
+        ["xpath=//input[@id='keywords']", "xpath:attributes"],
+        ["xpath=//form[@id='search']/fieldset/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "28a0cd68-91b0-4e80-afc8-57f0edc0d3bd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a83a7e86-922b-4b21-8611-5a5775a3fad9",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e969bfbb-c9ff-4783-84e3-b90e89a183d0"]
+  }],
+  "urls": ["https://www.srware.net/"],
+  "plugins": []
+}
